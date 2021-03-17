@@ -90,8 +90,19 @@ public class DepartmentListController implements Initializable {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
 			Pane pane = loader.load();
 			
+			//instanciando controlador da janela DepartmentForm
 			DepartmentFormController controller = loader.getController();
+			
+			//setando o obj Department no controller do DepartmentForm
+			//INJEÇÃO DE DEPENDENCIA 
+			//INJETANDO DEPARTAMENTO
 			controller.setDepartment(obj);
+			
+			//INJEÇÃO DE DEPENDENCIA 
+			//INJETANDO DEPARTAMENTOSERVICE
+			controller.setDepartmentService(new DepartmentService());
+			
+			//Atualizando a tabela com  o metodo Update do obj setado acima
 			controller.updateFormData();
 			
 			Stage dialogStage = new Stage();
