@@ -11,7 +11,7 @@
 
 <VBox prefHeight="322.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SellerListController">
    <children>
-      <Label prefHeight="26.0" prefWidth="188.0" text="Registro de Departamento">
+      <Label prefHeight="26.0" prefWidth="188.0" text="Registro de Vendedores">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -28,6 +28,9 @@
         <columns>
           <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
           <TableColumn fx:id="tableColumnName" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="tableColumnEmail" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="tableColumnBirthdate" prefWidth="75.0" text="Data de Nascimento" />
+            <TableColumn fx:id="tableColumnBaseSalary" prefWidth="75.0" text="Base Salarial" />
             <TableColumn fx:id="tableColumnEDIT" prefWidth="75.0" />
             <TableColumn fx:id="tableColumnREMOVE" prefWidth="75.0" />
         </columns>
