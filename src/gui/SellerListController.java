@@ -137,7 +137,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 			controller.loadAssociatedObjects();
 
 			// SE INSCREVENDO PARA RECEBER EVENTO (PADRAO DE OBJETO OBSERVER)
-			controller.subscribeDateChangeListener(this);
+			controller.subscribeDataChangeListener(this);
 
 			// Atualizando a tabela com o metodo Update do obj setado acima
 			controller.updateFormData();
